@@ -48,6 +48,7 @@ h1 {
   margin: 1rem 0;
   font-weight: 700;
 }
+
 .article-img {
   object-fit: cover;
   object-position: left;
@@ -56,20 +57,36 @@ h1 {
   border-radius: 10px 10px 0 0;
 }
 
-.flex-row {
+.article-footer {
+  border: 1px dotted orangered;
+  height: 13%;
+  position: relative;
+}
+
+.share-menu {
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--light-grayish-blue);
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+}
+
+.nonvisible {
+  visibility: hidden;
+}
+
+.flex-row-around {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .flex-column-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.article-footer {
-  border: 1px dotted orangered;
-  height: 13%;
 }
 
 .page-footer {
