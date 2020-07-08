@@ -1,7 +1,88 @@
+/* Colors*/
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desat-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  background-color: var(--light-grayish-blue);
+  font-family: 'Manrope', sans-serif;
+  font-size: .8125rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+main {
+  background-color: white;
+  height: 77%;
+  width: 87%;
+  margin: 4.625rem auto;
+  border-radius: 10px;
+  font-size: 0.822rem;
+  line-height: 1.5;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 40%;
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.article-img {
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-footer {
+  border: 1px dotted orangered;
+  height: 13%;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }

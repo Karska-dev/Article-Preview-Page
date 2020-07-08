@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main role="main" class="flex-column-between">
+      <header class="article-header">
+        <img
+          class="article-img"
+          src="./images/drawers.jpg"
+          alt="Article Image"
+        />
+      </header>
+      <article>
+        <section>
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </section>
+      </article>
+      <footer class="article-footer">
+        Michelle Appleton 28 Jun 2020 Share
+      </footer>
+    </main>
+    <footer class="page-footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://twitter.com/karska_dev">Karska</a>.
+      </div>
+    </footer>
 
-</head>
-<body>
-
-  <!--Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://twitter.com/karska_dev">Karska</a>.
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
