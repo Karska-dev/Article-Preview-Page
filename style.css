@@ -41,6 +41,7 @@ main {
 article {
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 header {
@@ -159,9 +160,9 @@ p {
 }
 
 .page-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: fixed;
+  bottom: .1875rem;
+  right: .3125rem;
 }
 
 .attribution {
