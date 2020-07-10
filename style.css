@@ -39,9 +39,12 @@ main {
 }
 
 article {
+  height: 60%;
+}
+
+article, .share-menu-wrap {
   width: 80%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 header {
@@ -67,8 +70,9 @@ p {
   border-radius: 10px 10px 0 0;
 }
 
-.article-footer {
-  height: 13%;
+.article-section {
+  margin: 1.5rem 0;
+  overflow: hidden;
 }
 
 .author-info {
@@ -96,18 +100,22 @@ p {
   border-radius: 50%;
 }
 
+.article-footer, .share-menu {
+  height: 4.1875rem;
+}
+
 .share-menu {
   background-color: var(--very-dark-grayish-blue);
   color: var(--light-grayish-blue);
-  height: 13%;
   width: 100%;
   border-radius: 0 0 10px 10px;
   position: absolute;
+  display: flex;
   bottom: 0;
 }
 
 .share-menu-links {
-  width: 53%;
+  width: 65%;
 }
 
 .share-menu-links img {
@@ -172,4 +180,10 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+@media only screen and (min-width: 857px) {
+  main {
+    background-color: lightblue;
+  }
 }

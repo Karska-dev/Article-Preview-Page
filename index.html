@@ -28,8 +28,8 @@
           alt="Article Image"
         />
       </header>
-      <article>
-        <section>
+      <article class="flex-column-between">
+        <section class="article-section">
           <h1>
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
@@ -40,30 +40,42 @@
             you make any room feel complete.
           </p>
         </section>
-      </article>
-      <footer class="article-footer flex-row-around">
-        <div class="author-info flex-row-start">
-          <img class="author-avatar" src="images/avatar-michelle.jpg" alt="Author avatar">
-          <div class="name-data">
-            <div class="author-name">Michelle Appleton</div>
-            <div class="article-data">28 Jun 2020</div>
-          </div> 
-        </div>
-        <button class="share-button">
-          <img src="images/icon-share.svg" alt="Share button">
-        </button>
-        
-      </footer><div class="share-menu flex-row-around nonvisible">
-          <div class="share-menu-links flex-row-between">
-            <span class="share-menu-title">Share</span>
-            <a href="#"><img src="images/icon-facebook.svg" alt="Facebook share"></a>
-            <a href="#"><img src="images/icon-twitter.svg" alt="Twitter share"></a>
-            <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest share"></a>
+        <footer class="article-footer flex-row-between">
+          <div class="author-info flex-row-start">
+            <img
+              class="author-avatar"
+              src="images/avatar-michelle.jpg"
+              alt="Author avatar"
+            />
+            <div class="name-data">
+              <div class="author-name">Michelle Appleton</div>
+              <div class="article-data">28 Jun 2020</div>
+            </div>
           </div>
           <button class="share-button">
-            <img src="images/icon-share.svg" alt="Share button">
+            <img src="images/icon-share.svg" alt="Share button" />
+          </button>
+        </footer>
+      </article>
+      <div class="share-menu nonvisible">
+        <div class="share-menu-wrap flex-row-between">
+          <div class="share-menu-links flex-row-between">
+            <span class="share-menu-title">Share</span>
+            <a href="#"
+              ><img src="images/icon-facebook.svg" alt="Facebook share"
+            /></a>
+            <a href="#"
+              ><img src="images/icon-twitter.svg" alt="Twitter share"
+            /></a>
+            <a href="#"
+              ><img src="images/icon-pinterest.svg" alt="Pinterest share"
+            /></a>
+          </div>
+          <button class="share-button">
+            <img src="images/icon-share.svg" alt="Share button" />
           </button>
         </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="attribution">
