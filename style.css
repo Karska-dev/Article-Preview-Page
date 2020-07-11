@@ -21,8 +21,8 @@ html {
 body {
   height: 100%;
   background-color: var(--light-grayish-blue);
-  font-family: 'Manrope', sans-serif;
-  font-size: .8125rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
   color: var(--very-dark-grayish-blue);
   display: flex;
   flex-direction: row;
@@ -49,7 +49,8 @@ article {
   justify-content: space-between;
 }
 
-article, .share-menu-wrap {
+article,
+.share-menu-wrap {
   width: 80%;
   margin: 0 auto;
 }
@@ -92,7 +93,6 @@ p {
 
 .name-data {
   padding-left: 1rem;
-  
 }
 
 .author-name {
@@ -116,7 +116,8 @@ p {
   align-items: center;
 }
 
-.article-footer, .share-menu {
+.article-footer,
+.share-menu {
   height: 4.1875rem;
 }
 
@@ -171,8 +172,8 @@ p {
 
 .page-footer {
   position: fixed;
-  bottom: .1875rem;
-  right: .3125rem;
+  bottom: 0.1875rem;
+  right: 0.3125rem;
 }
 
 .attribution {
@@ -185,7 +186,6 @@ p {
 }
 
 @media only screen and (min-width: 857px) {
-
   main {
     flex-direction: row;
     width: 50.65%;
@@ -222,5 +222,33 @@ p {
 
   .article-section {
     margin: 0;
+  }
+
+  .share-menu-links {
+    visibility: visible;
+    background-color: var(--very-dark-grayish-blue);
+    width: 248px;
+    height: 56px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    position: absolute;
+    right: -75px;
+    bottom: 87px;
+    filter: drop-shadow(2px 4px 6px var(--very-dark-grayish-blue));
+  }
+
+  .share-menu-wrap {
+    margin: 0;
+    width: 100%;
+  }
+
+  .share-menu-links::after {
+    content: "";
+    position: absolute;
+    border: 10px solid black;
+    border-radius: 0px;
+    border-color: var(--very-dark-grayish-blue) transparent transparent;
+    right: 119px;
+    top: 98%;
   }
 }
