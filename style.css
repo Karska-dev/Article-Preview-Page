@@ -59,7 +59,7 @@ article,
 }
 
 header {
-  height: 40%;
+  height: 30vh;
 }
 
 h1 {
@@ -83,7 +83,7 @@ p {
 
 .article-section {
   margin: 1rem 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .author-info {
@@ -209,10 +209,10 @@ p {
 @media only screen and (min-width: 950px) {
   main {
     flex-direction: row;
-    width: 50.65%;
+    width: 51%;
     max-width: 975px;
     height: 35%;
-    min-height: 350px;
+    min-height: 280px;
     margin: 0;
   }
 
