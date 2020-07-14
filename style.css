@@ -160,10 +160,26 @@ p {
   height: 34px;
   border-radius: 50%;
   border: none;
+  background-image: url(images/icon-share.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.share-button:hover, .share-button:focus {
+  transform: scale(1.1);
+}
+
+.share-button-clicked {
+  background-image: url(images/icon-share-white.svg);
+  background-color: hsl(217, 19%, 35%);
 }
 
 .nonvisible {
   visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .flex {
@@ -225,7 +241,6 @@ p {
   }
 
   .share-menu-links {
-    visibility: visible;
     background-color: var(--very-dark-grayish-blue);
     width: 248px;
     height: 56px;
