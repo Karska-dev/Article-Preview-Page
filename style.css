@@ -32,8 +32,11 @@ body {
 
 main {
   background-color: white;
-  height: 77%;
+  height: min-content;
+  min-height: 375px;
   width: 87%;
+  min-width: 260px;
+  max-width: 450px;
   border-radius: 10px;
   font-size: 0.822rem;
   font-weight: 500;
@@ -79,7 +82,7 @@ p {
 }
 
 .article-section {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   overflow: hidden;
 }
 
@@ -157,7 +160,9 @@ p {
 
 .share-button {
   width: 34px;
+  min-width: 34px;
   height: 34px;
+  min-height: 34px;
   border-radius: 50%;
   border: none;
   background-image: url(images/icon-share.svg);
@@ -201,11 +206,13 @@ p {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 857px) {
+@media only screen and (min-width: 950px) {
   main {
     flex-direction: row;
     width: 50.65%;
+    max-width: 975px;
     height: 35%;
+    min-height: 350px;
     margin: 0;
   }
 
