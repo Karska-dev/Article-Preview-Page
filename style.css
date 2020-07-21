@@ -33,7 +33,6 @@ body {
 main {
   background-color: white;
   height: min-content;
-  min-height: 375px;
   width: 87%;
   min-width: 260px;
   max-width: 450px;
@@ -207,13 +206,12 @@ p {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1024px) {
   main {
     flex-direction: row;
     width: 51%;
     max-width: 975px;
-    height: 35%;
-    min-height: 280px;
+    /*height: 35%;*/
     margin: 0;
   }
 
@@ -245,7 +243,7 @@ p {
   }
 
   .article-section {
-    margin: 0;
+    margin: 0 0 1rem 0;
   }
 
   .share-menu-links {
@@ -275,3 +273,4 @@ p {
     top: 98%;
   }
 }
+
