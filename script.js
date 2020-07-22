@@ -29,9 +29,7 @@ function toggleMobileShare() {
 function toggleDesktopShare() {
   //console.log('iam desktop')
   menuLinks.classList.toggle('visible');
-  let deltaX = parseInt(menuLinks.offsetLeft - shareButton.offsetLeft);
-  let deltaWidth = parseInt((menuLinks.offsetWidth - shareButton.offsetWidth)/2);
-  menuLinks.style.right = `${deltaX + deltaWidth}px`;
+
 }
 
 function hideAnyShare() {
