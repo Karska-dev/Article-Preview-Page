@@ -33,7 +33,6 @@ body {
 main {
   background-color: white;
   height: min-content;
-  min-height: 375px;
   width: 87%;
   min-width: 260px;
   max-width: 450px;
@@ -166,18 +165,32 @@ p {
   min-height: 34px;
   border-radius: 50%;
   border: none;
-  background-image: url(images/icon-share.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--light-grayish-blue);
+  padding: 8px 10px;
 }
 
 .share-button:hover, .share-button:focus {
-  transform: scale(1.1);
+  background-color: var(--desat-dark-blue);
 }
 
-.share-button-clicked {
-  background-image: url(images/icon-share-white.svg);
-  background-color: hsl(217, 19%, 35%);
+.share-button:hover svg path, .share-button:focus svg path {
+  fill: white;
+}
+
+.share-button--dark {
+  background-color: var(--desat-dark-blue);
+}
+
+.share-button--dark svg path {
+  fill: #fff;
+}
+
+.share-button--dark:hover, .share-button--dark:focus {
+  background-color: var(--light-grayish-blue);
+}
+
+.share-button--dark:hover svg path, .share-button--dark:focus svg path {
+  fill: var(--desat-dark-blue);
 }
 
 .nonvisible {
@@ -207,13 +220,12 @@ p {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1024px) {
   main {
     flex-direction: row;
     width: 51%;
     max-width: 975px;
-    height: 35%;
-    min-height: 280px;
+    /*height: 35%;*/
     margin: 0;
   }
 
@@ -245,7 +257,7 @@ p {
   }
 
   .article-section {
-    margin: 0;
+    margin: 0 0 1rem 0;
   }
 
   .share-menu-links {
@@ -255,7 +267,7 @@ p {
     border-radius: 10px;
     justify-content: space-evenly;
     position: absolute;
-    right: -75px;
+    right: 0;
     bottom: 87px;
     filter: drop-shadow(2px 4px 6px var(--very-dark-grayish-blue));
   }
@@ -271,7 +283,8 @@ p {
     border: 10px solid black;
     border-radius: 0px;
     border-color: var(--very-dark-grayish-blue) transparent transparent;
-    right: 119px;
+    right: 114px;
     top: 98%;
   }
 }
+
