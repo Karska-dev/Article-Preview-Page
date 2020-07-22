@@ -236,7 +236,7 @@ p {
 
   article {
     width: 50%;
-    height: 100%;
+    height: unset;
     padding: 2rem 0;
   }
 
@@ -267,7 +267,7 @@ p {
     border-radius: 10px;
     justify-content: space-evenly;
     position: absolute;
-    right: 0;
+    right: -60px;
     bottom: 87px;
     filter: drop-shadow(2px 4px 6px var(--very-dark-grayish-blue));
   }
