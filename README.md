@@ -1,4 +1,4 @@
-live site - https://karska-dev.github.io/frontendmentor-article-preview/
+live site - https://karska-dev.github.io/Article-Preview-Page/
 
 # frontendmentor-article-preview
 Challenge from frontendmentor.io - Article preview component, html css js, newbie level.
